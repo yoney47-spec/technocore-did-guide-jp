@@ -120,8 +120,8 @@ notepad ".\sign.py"
 ### B-3. 分離環境を作る
 
 ```powershell
-py -3.12 -m venv ".venv"
-& ".\.venv\Scripts\python.exe" -m pip install "cryptography==46.0.0"
+py -m venv ".venv"
+& ".\.venv\Scripts\python.exe" -m pip install "cryptography==46.0.7"
 ```
 
 この操作はPythonの暗号ライブラリを専用フォルダ内へ導入します。他のPython環境やウォレットには触れません。
