@@ -152,7 +152,7 @@ py -m venv ".venv"
 5. 保存できたらクリップボードを空にします。
 
 ```powershell
-Set-Clipboard -Value ""
+Set-Clipboard -Value " " # 空白1文字で上書き
 Clear-Host
 ```
 
@@ -227,7 +227,7 @@ $contributionRecord | ConvertTo-Json -Depth 10
 $env:SIGN_SEED = $null
 if ($secret) { $secret.Dispose() }
 Clear-Variable secret,pointer,signed,signature,url,text,nonce -ErrorAction SilentlyContinue
-Set-Clipboard -Value ""
+Set-Clipboard -Value " " # 空白1文字で上書き
 Clear-Host
 ```
 
